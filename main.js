@@ -20,21 +20,21 @@ console.log(crescent);
 
 // SELFWORK 2 ARRAY
 
-// function media(array) {
-//     let somma= array.reduce((acc,n)=>acc+n)
-//     let media= somma/array.length
-//     let filter = array.filter((number)=> number < media)
-//     let maggiore= array.filter((number)=> number> media).length;
-//     let minore= array.filter((number)=> number< media).length;
-//     console.log(minore);
+function media(array) {
+    let somma= array.reduce((acc,n)=>acc+n)
+    let media= somma/array.length
+    let filter = array.filter((number)=> number < media)
+    let maggiore= array.filter((number)=> number> media).length;
+    let minore= array.filter((number)=> number< media).length;
+    console.log(minore);
     
     
     
-//     return `La media dei numeri è ${media},i valori minori sono [${filter}],i numeri inferiori alla media sono ${minore},i numeri superiori alla media sono ${maggiore}`
+    return `La media dei numeri è ${media},i valori minori sono [${filter}],i numeri inferiori alla media sono ${minore},i numeri superiori alla media sono ${maggiore}`
     
-// }
+}
 
-// let exercise= media([1,2,3,4,5,6,7])
+let exercise= media([1,2,3,4,5,6,7])
 
-// console.log(exercise);
+console.log(exercise);
 
